@@ -14,7 +14,7 @@ import (
 )
 
 //nolint:exhaustruct,errcheck
-func ExampleHandler_gap() {
+func ExampleDecode_gap() {
 	// This handler decodes user from JSON payload and again encodes it in the response.
 	handler := gap.Wrap(func(w http.ResponseWriter, req *http.Request) error {
 		var user User
@@ -52,7 +52,7 @@ func ExampleHandler_gap() {
 }
 
 //nolint:exhaustruct,errcheck
-func ExampleHandler_std() {
+func ExampleDecode_std() {
 	// This handler decodes user from JSON payload and again encodes it in the response.
 	handler := func(w http.ResponseWriter, req *http.Request) {
 		var user User

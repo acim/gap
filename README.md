@@ -5,7 +5,7 @@
 [![Go Report](https://goreportcard.com/badge/go.acim.net/gap)](https://goreportcard.com/report/go.acim.net/gap)
 ![Go Coverage](https://img.shields.io/badge/coverage-91.4%25-brightgreen?style=flat&logo=go)
 
-Library for easy implementation of REST API's in Go. Besides helpers to decode and encode JSON payloads using standard library _http.HandlerFunc_ type of handler, this library supports handler functions returning errors, e.g. *func(w http.ResponseWriter, req *http.Request) error)\* and makes errors handling much easier.
+Library for easy implementation of REST API's in Go. Besides helpers to decode and encode JSON payloads using standard library _http.HandlerFunc_ type of handler, this library supports handler functions returning errors, e.g. _func(w http.ResponseWriter, req \*http.Request) error_ and makes errors handling much easier.
 
 ## Warning :construction:
 
