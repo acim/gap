@@ -3,9 +3,9 @@
 [![pipeline](https://github.com/acim/gap/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/acim/gap/actions/workflows/pipeline.yaml)
 [![Go Reference](https://pkg.go.dev/badge/go.acim.net/gap.svg)](https://pkg.go.dev/go.acim.net/gap)
 [![Go Report](https://goreportcard.com/badge/go.acim.net/gap)](https://goreportcard.com/report/go.acim.net/gap)
-![Go Coverage](https://img.shields.io/badge/coverage-91.4%25-brightgreen?style=flat&logo=go)
+![Go Coverage](https://img.shields.io/badge/coverage-92.6%25-brightgreen?style=flat&logo=go)
 
-Library for easy implementation of REST API's in Go. Besides helpers to decode and encode JSON payloads using standard library _http.HandlerFunc_ type of handler, this library supports handler functions returning errors, e.g. _func(w http.ResponseWriter, req \*http.Request) error_ and makes errors handling much easier.
+Library for easy implementation of REST API's in Go. Besides helpers to decode and encode JSON payloads using standard library _http.HandlerFunc_ type of handler, this library supports handler functions returning errors, e.g. _func(w http.ResponseWriter, req \*http.Request) error_ and makes errors handling much easier. Finally, it also contains idiomatic Go middlewares for HTTP request logging using [slog](https://pkg.go.dev/golang.org/x/exp/slog) and [zap](https://github.com/uber-go/zap) loggers. Please look at the tests for example usages.
 
 ## Warning :construction:
 
