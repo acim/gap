@@ -22,7 +22,7 @@ func TestSlogLogger(t *testing.T) {
 	rec := httptest.NewRecorder()
 	buf := &bytes.Buffer{}
 
-	log := slog.New(slog.NewJSONHandler(buf, nil)) 
+	log := slog.New(slog.NewJSONHandler(buf, nil))
 	middleware := mw.NewSlogLogger(handler, log)
 
 	middleware.ServeHTTP(rec, req)
