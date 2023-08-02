@@ -3,9 +3,9 @@ module go.acim.net/gap
 go 1.20
 
 require (
-	github.com/go-chi/chi/v5 v5.0.8
+	github.com/go-chi/chi/v5 v5.0.10
 	go.uber.org/zap v1.24.0
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df
+	golang.org/x/exp v0.0.0-20230728194245-b0cb94b80691
 )
 
 require (
