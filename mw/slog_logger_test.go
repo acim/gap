@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"go.acim.net/gap/mw"
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 func TestSlogLogger(t *testing.T) {
