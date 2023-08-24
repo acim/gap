@@ -203,7 +203,7 @@ func userHandler(w http.ResponseWriter, req *http.Request) error {
 		}
 	}
 
-	gap.Response[User]{Data: &user}.Encode(w)
+	gap.Response[User]{Data: &user}.Encode(w) //nolint:exhaustruct
 
 	return nil
 }

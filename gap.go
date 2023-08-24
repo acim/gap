@@ -61,12 +61,12 @@ func Wrap(next HandlerFunc) http.HandlerFunc {
 		if err := next(w, req); err != nil {
 			var e Error
 			if errors.As(err, &e) {
-				Response[NoData]{StatusCode: e.Status(), Err: e.Error()}.Encode(w)
+				Response[NoData]{StatusCode: e.Status(), Err: e.Error()}.Encode(w) //nolint:exhaustruct
 
 				return
 			}
 
-			Response[NoData]{
+			Response[NoData]{ //nolint:exhaustruct
 				StatusCode: http.StatusInternalServerError,
 				Err:        http.StatusText(http.StatusInternalServerError),
 			}.Encode(w)

@@ -3,13 +3,13 @@ package mw_test
 import (
 	"bytes"
 	"encoding/json"
+	"log/slog"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
 
 	"go.acim.net/gap/mw"
-	"log/slog"
 )
 
 func TestSlogLogger(t *testing.T) {

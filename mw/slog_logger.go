@@ -1,11 +1,11 @@
 package mw
 
 import (
+	"log/slog"
 	"net/http"
 	"time"
 
 	"github.com/go-chi/chi/v5/middleware"
-	"log/slog"
 )
 
 const Message = "request completed"
